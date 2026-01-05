@@ -1,11 +1,13 @@
+import logging.config
+
+from app.logging_setup import logging_setup
+
+logger = logging.getLogger(__name__)
 
 
-import pytest
+def main() -> None:
+    logging_setup()
 
-x = 42
 
-def Yolo():
-    return 42
-
-p = pytest
-
+if __name__ == "__main__":
+    main()
